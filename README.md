@@ -28,7 +28,7 @@ cd OpenPlaySync
 ./scripts/build.sh --install
 ```
 
-This builds `build/OpenPlaySync.app`, copies it to `~/Applications`, and launches it. The first time, macOS asks for permission to capture system audio. Allow it under **System Settings → Privacy & Security → Screen & System Audio Recording**.
+This builds `build/Open Play Sync.app`, copies it to `/Applications`, and launches it. The first time, macOS asks for permission to capture system audio. Allow it under **System Settings → Privacy & Security → Screen & System Audio Recording**.
 
 ## Usage
 
@@ -49,7 +49,7 @@ When OpenPlaySync stops or quits, the tap and aggregate are removed and audio go
 Render the menu to an image without opening it:
 
 ```bash
-~/Applications/OpenPlaySync.app/Contents/MacOS/OpenPlaySync --snapshot ~/Desktop/menu.png
+"/Applications/Open Play Sync.app/Contents/MacOS/OpenPlaySync" --snapshot ~/Desktop/menu.png
 ```
 
 Regenerate the icon after editing `scripts/make-icon.swift`:

@@ -702,7 +702,7 @@ struct OpenPlaySyncApp: App {
     }
 
     var body: some Scene {
-        MenuBarExtra("OpenPlaySync", systemImage: engine.running ? "hifispeaker.2.fill" : "hifispeaker.2") {
+        MenuBarExtra("Open Play Sync", systemImage: engine.running ? "hifispeaker.2.fill" : "hifispeaker.2") {
             MenuContent(engine: engine)
         }
         .menuBarExtraStyle(.window)
@@ -715,7 +715,7 @@ struct MenuContent: View {
     var body: some View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text("OpenPlaySync").font(.headline)
+                    Text("Open Play Sync").font(.headline)
                     Spacer()
                     Button(engine.running ? "Stop" : "Start") { engine.toggle() }
                 }
